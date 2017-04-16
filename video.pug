@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+  .content
+    .row
+      .col.col--xl-8.col--xl-offset-2
+        h1.inner-h1 Видео
+        -for(var i = 0; i < 2; i++)
+          .video
+            .video__title.header Присоединяйтесь к нам!
+            .video__movie
+              img(src="img/video.jpg", alt="")

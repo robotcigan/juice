@@ -1,0 +1,33 @@
+extends layout.pug
+
+block content
+  .content
+    .row
+      .col.col--xl-10.col--xl-offset-1
+        h1.inner-h1 Рецепты
+        -for(var i = 0; i < 5; i++)
+          .inner-recipe
+            .inner-recipe__img
+              img(src="img/recipe.jpg", alt="")
+            .inner-recipe__content
+              .header.inner-recipe__header Панна-котта с желе из нектара апельсина и манго
+              p Молоко 3,5% — 225 мл;
+                br
+                | Ванильный сахар — 50 г;
+                br
+                | Сливки 33% — 225 г;
+                br
+                | Желатин листовой — 10 г.
+              a(href="").btn.inner-recipe__btn Узнать рецепт
+
+        .pagination
+          .pagination__link 
+            a(href="") 1
+          .pagination__link 
+            a(href="") 2
+          .pagination__link 
+            a(href="") 3
+          .pagination__link
+            a(href="") &hellip;
+          .pagination__link 
+            a(href="") 10

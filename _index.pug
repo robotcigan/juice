@@ -1,0 +1,65 @@
+extends layout.pug
+
+block content
+  .action
+    .row
+      .col.col--lg-5
+        .juice-pack
+          img(src="img/juice-pack.png", alt="")
+        .fruit
+          img(src="img/fruit.png", alt="")
+        .stump
+      .col.col--lg-5.col--lg-offset-1
+        .card.card--main
+          h1.header--h1 Медовые кубанские яблочки
+          .row
+            .col.col--lg-8
+              p.primary Сияет сладким янтарём
+                br
+                | Медовым солнечным огнём.
+                br
+                | Над всеми фруктами царит
+                br
+                | Нам о Кубани говорит.
+              p.primary Вот это яблоко, оно
+                br
+                | Кубанским солнышком полно
+                br
+                | В садах душистых созревает
+                br
+                | И нас здоровьем наполняет.
+  .content
+    .row.cards
+      .col.col--xl-4.col--xl-flex
+        .card
+          h2.header Видео
+          p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики в простых на первый взгляд вещах.
+      .col.col--xl-4.col--xl-flex
+        .card.news
+          .news__img
+            img(src="img/news-1.jpg", alt="")
+          .news__content
+            h2.header Новость
+            time.date 02 марта 2017
+            p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.
+      .col.col--xl-4.col--xl-flex.flex-wrap
+        .card
+          h2.header О бренде
+          p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.
+          a(href="").btn Подробнее
+        .card.recipe
+          h2.header Рецепт
+          a(href="").btn Все рецепты
+    .row.cards
+      .col.col--xl-4.col--xl-flex
+        .card.card--small
+          h2.header Документация по качеству
+      .col.col--xl-4.col--xl-flex
+        .card.card--small
+          h2.header Наши контакты
+          a(href="").btn Обратная связь
+      .col.col--xl-4.col--xl-flex
+        .card.card--small
+          strong Горячая линия:
+          strong E-mail:
+          strong Почтовый адрес:

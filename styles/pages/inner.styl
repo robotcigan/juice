@@ -1,0 +1,50 @@
+.video
+  margin-bottom 5rem
+  &__title
+    color $primary
+
+.inner-recipe
+  background #fff
+  border-radius $radius
+  display block
+  margin-bottom 5rem
+  clearfix()
+  &__img
+    border-radius $radius 0 0 $radius
+    float left
+    overflow hidden
+    width 50rem
+    img
+      display block
+      max-width 100%
+  &__content
+    float left
+    height 30rem
+    padding 4rem 5rem
+    position relative
+  &__header
+    color $primary
+  &__btn
+    position absolute
+    bottom 0
+    right 0
+
+.pagination
+  text-align center
+  &__link
+    background transparent
+    border 1px solid $primary
+    border-radius 50%
+    display inline-block
+    margin-right 1rem
+    text-align center
+    &:hover
+      background-color #fff
+    a
+      color $primary
+      display inline-block
+      line-height 5rem
+      height 5rem
+      font-weight 600
+      text-decoration none
+      width 5rem

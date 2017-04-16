@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Juice
+    meta(name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="stylesheet", href="styles/css/vendor.css")
+    link(rel="stylesheet", href="styles/css/main.css")
+
+  body
+    
+    .bg
+
+      .grid.grid--container
+
+        header.main-header
+          .row.row--xl-center
+            .col.col--xl-5
+              nav.navigation
+                li.navigation__link: a(href="") О бренде
+                li.navigation__link: a(href="") Вкусы
+                li.navigation__link: a(href="") Новости
+            .col.col--xl-2.text--xl-center
+              a(href="/").logo
+            .col.col--xl-5
+              nav.navigation
+                li.navigation__link: a(href="") Видео
+                li.navigation__link: a(href="") Контакты
+                li.navigation__link: a(href="") Обратная связь
+
+
+
+        main
+          block content
+
+        footer.main-footer
+          .grid.grid--container
+            .row
+              .col.col--xl-6
+                .webformula
+                  span Создание сайта — 
+                  a(href="") Webformula
+              .col.col--xl-6
+                .copyright
+                  span Copyright © ООО "ЮЖНАЯ СОКОВАЯ КОМПАНИЯ"
+
+
+    script(src="js/jquery.min.js")
+    script(src="js/main.js")

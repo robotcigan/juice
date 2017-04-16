@@ -1,0 +1,96 @@
+.bg
+  background url('../../img/inner-bg.jpg')
+
+
+.action
+  margin-top 20rem
+  margin-bottom -20rem
+  height 88vh
+  position relative
+
+.juice-pack
+  animation fadeDown 1s ease
+  bottom 32rem
+  left 15rem
+  height 56rem
+  position absolute
+  width 18rem
+  z-index 50
+
+.fruit
+  animation fadeLeft 1s ease
+  bottom 30rem
+  left 23rem
+  position absolute
+  z-index 100
+
+.stump
+  background url('../../img/stump.png') no-repeat
+  background-size cover
+  bottom 10rem
+  display block
+  height 32rem
+  position absolute
+  width 50rem
+  z-index 1
+
+.content
+  background rgba(#fff, .5)
+  border-radius $radius
+  // margin-top -12rem
+  padding 4rem
+  position relative
+  z-index 50
+
+.date
+  color $gray
+  display inline-block
+  line-height 1
+  margin 0
+  margin-bottom .5rem
+
+// .cards
+//   margin-bottom 4rem
+
+.card
+  animation fadeUp 1.5s
+  background-color #fff
+  border-radius $radius
+  display block
+  margin-bottom 4rem
+  min-height 26.5rem
+  padding 3rem 4rem
+  width 100%
+  &--main
+    animation fadeUp 1s 1.5s forwards
+    opacity 0
+    margin-top -6rem
+  &--small
+    min-height 21rem
+  p
+    margin 0
+    margin-bottom 4rem
+
+.news
+  padding 0
+  &__content
+    padding 2rem 3rem
+  &__img
+    display block
+    // background-image url('../../img/news-1.jpg')
+    background-size cover
+    background-position 30%
+    border-radius $radius $radius 0 0
+    margin 0
+    height 26rem
+    width 100%
+    img
+      display none
+
+.recipe
+  background-image url('../../img/recipe.jpg')
+  background-size cover
+  &:hover
+    background-size cover
+  .header
+    color #fff
