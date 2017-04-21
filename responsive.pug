@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+  meta(charset="UTF-8")
+  title Responsive
+body
+  iframe(src="about.html", frameborder="0").ipad-vertical
+  iframe(src="about.html", frameborder="0").iphone5-vertical
+  iframe(src="about.html", frameborder="0").iphone6plus-vertical
+  iframe(src="about.html", frameborder="0").iphone5-horizontal
+  iframe(src="about.html", frameborder="0").ipad-horizontal
+
+  style.
+    .ipad-vertical {
+      float: left;
+      height: 1024px;
+      width: 768px;
+    }
+      
+
+    .ipad-horizontal {
+      float: left;
+      height: 768px;
+      width: 1024px;
+    }
+      
+
+    .iphone5-horizontal {
+      float: left;
+      height: 568px;
+      width: 320px;
+    }
+      
+
+    .iphone5-vertical {
+      float: left;
+      height: 320px;
+      width: 568px;
+    }
+    
+    .iphone6plus-vertical {
+      float: left;
+      height: 736px;
+      width: 414px;
+    }

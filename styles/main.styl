@@ -1,38 +1,44 @@
-@import './helpers/variables.styl'
-@import './helpers/mixins.styl'
-@import './base/animation.styl'
-@import './base/base.styl'
-@import './base/typography.styl'
-@import './pages/index.styl'
-@import './pages/inner.styl'
+@import 'helpers/variables.styl'
+@import 'helpers/mixins.styl'
+@import 'base/typography.styl'
+@import 'base/animation.styl'
+@import 'base/base.styl'
+@import 'base/form.styl'
+@import 'pages/index.styl'
+@import 'pages/inner.styl'
 
 
 
 .grid--container
-  max-width 1530px
+  max-width 1300px
 
 .bg
-  background-size cover
-  // max-height 2300px
+  // background-size cover
+  max-height 2300px
+
+.adaptive-img
+  display block
+  max-width 100%
 
 .primary
   color $primary
 
 .main-header
   margin-bottom 10rem
-  padding-top 5rem
+  padding-top 3rem
 
 .logo
   background url('../../img/logo.png') no-repeat
   background-size contain
   display inline-block
-  height 11rem
-  width 14rem
+  height 10rem
+  width 13rem
 
 .navigation
-  list-style-type none
   display flex
   justify-content space-around
+  list-style-type none
+  margin-top -2rem
   &__link
     display inline-block
     a
@@ -40,10 +46,23 @@
       font-family 'Gill Sans Nova'
       font-size 2.4rem
       font-weight 600
+      display inline-block
+      line-height 1
+      position relative
       text-decoration none
       text-transform uppercase
+      &:after
+        background #fff
+        content ''
+        height 2px
+        left 0
+        position absolute
+        top 120%
+        transition all .3s
+        width 0
       &:hover
-        color $primary
+        &:after
+          width 100%
 
 .flex-wrap
   flex-wrap wrap
@@ -51,19 +70,16 @@
 .text-center
   text-align center
 
-.btn
-  background-color $primary
+
+.content
+  background rgba(#fff, .5)
   border-radius $radius
-  color #fff
-  display inline-block
-  font-size 1.4rem
-  font-weight 600
-  letter-spacing .5px
-  line-height  4.2rem
-  text-align center
-  text-decoration none
-  text-transform uppercase
-  width 17rem
+  padding 4rem 3rem
+  position relative
+  z-index 50
+  &--inner
+    background rgba(#fff, .9)
+
 
 .main-footer
   color #fff

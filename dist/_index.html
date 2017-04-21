@@ -8,25 +8,27 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles/css/vendor.css">
     <link rel="stylesheet" href="styles/css/main.css">
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
   </head>
   <body>
     <div class="bg">
       <div class="grid grid--container">
         <header class="main-header">
-          <div class="row row--xl-center">
-            <div class="col col--xl-5">
+          <div class="row row--sm-center">
+            <div class="col col--sm-5">
               <nav class="navigation">
-                <li class="navigation__link"><a href="">О бренде</a></li>
-                <li class="navigation__link"><a href="">Вкусы</a></li>
-                <li class="navigation__link"><a href="">Новости</a></li>
+                <li class="navigation__link"><a href="about.html">О бренде</a></li>
+                <li class="navigation__link"><a href="products.html">Вкусы</a></li>
+                <li class="navigation__link"><a href="news.html">Новости</a></li>
               </nav>
             </div>
-            <div class="col col--xl-2 text--xl-center"><a class="logo" href="/"></a></div>
-            <div class="col col--xl-5">
+            <div class="col col--sm-2 text--sm-center"><a class="logo" href="/"></a></div>
+            <div class="col col--sm-5">
               <nav class="navigation">
-                <li class="navigation__link"><a href="">Видео</a></li>
-                <li class="navigation__link"><a href="">Контакты</a></li>
-                <li class="navigation__link"><a href="">Обратная связь</a></li>
+                <li class="navigation__link"><a href="video.html">Видео</a></li>
+                <li class="navigation__link"><a href="contacts.html">Контакты</a></li>
+                <li class="navigation__link"><a href="callback.html">Обратная связь</a></li>
               </nav>
             </div>
           </div>
@@ -34,65 +36,135 @@
         <main>
           <div class="action">
             <div class="row">
-              <div class="col col--lg-5">
-                <div class="juice-pack"><img src="img/juice-pack.png" alt=""></div>
-                <div class="fruit"><img src="img/fruit.png" alt=""></div>
+              <div class="col col--sm-5">
+                <div class="exposition">
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-cherry.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/4.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-orange.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/1.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide active">
+                    <div class="juice-pack"><img src="img/juice-pack-apple.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/8.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-carrot.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/2.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-peach.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/9.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-grapes.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/3.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-pumpkin.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/7.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-tomatos.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/5.png" alt=""></div>
+                  </div>
+                  <div class="exposition__slide">
+                    <div class="juice-pack"><img src="img/juice-pack-multy.png" alt=""></div>
+                    <div class="fruit"><img src="img/slider/6.png" alt=""></div>
+                  </div>
+                </div>
                 <div class="stump"></div>
               </div>
-              <div class="col col--lg-5 col--lg-offset-1">
+              <div class="col col--sm-5 col--sm-offset-1">
                 <div class="card card--main">
-                  <h1 class="header--h1">Медовые кубанские яблочки</h1>
                   <div class="row">
-                    <div class="col col--lg-8">
+                    <div class="col col--sm-12">
+                      <h1 class="header--h1">Медовые кубанские яблочки</h1>
+                    </div>
+                    <div class="col col--sm-8">
                       <p class="primary">Сияет сладким янтарём<br>Медовым солнечным огнём.<br>Над всеми фруктами царит<br>Нам о Кубани говорит.</p>
                       <p class="primary">Вот это яблоко, оно<br>Кубанским солнышком полно<br>В садах душистых созревает<br>И нас здоровьем наполняет.</p>
+                    </div>
+                    <div class="col col--sm-4 col--sm-align-bottom">
+                      <div class="small-packs">
+                        <div class="pack"><img src="img/small-pack.png" alt=""><span>1л</span></div>
+                        <div class="pack"><img src="img/small-pack-contur.png" alt=""><span>0.2л</span></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="content">
-            <div class="row cards">
-              <div class="col col--xl-4 col--xl-flex">
-                <div class="card">
-                  <h2 class="header">Видео</h2>
-                  <p>Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики в простых на первый взгляд вещах.</p>
+          <div class="row">
+            <div class="col col--sm-12">
+              <div class="taste-container">
+                <div class="taste-choice">
+                  <div class="taste"><img src="img/fruit/cherry.png" alt=""></div>
+                  <div class="taste"><img src="img/fruit/orange.png" alt=""></div>
+                  <div class="taste active"><img src="img/fruit/apple.png" alt=""><span class="taste__name">Яблоко</span></div>
+                  <div class="taste"><img src="img/fruit/carrot.png" alt=""></div>
+                  <div class="taste"><img src="img/fruit/peach.png" alt=""></div>
+                  <div class="taste"><img src="img/fruit/grapes.png" alt=""></div>
+                  <div class="taste"><img src="img/fruit/pumpkin.png" alt=""></div>
+                  <div class="taste"><img src="img/fruit/tomato.png" alt=""></div>
+                  <div class="taste"><img src="img/fruit/mix.png" alt=""></div>
                 </div>
               </div>
-              <div class="col col--xl-4 col--xl-flex">
-                <div class="card news">
-                  <div class="news__img"><img src="img/news-1.jpg" alt=""></div>
-                  <div class="news__content">
+            </div>
+          </div>
+          <div class="content">
+            <div class="row cards">
+              <div class="col col--sm-4 col--sm-flex">
+                <div class="card card--images wow" data-wow-delay="0.2s">
+                  <div class="card__content">
+                    <h2 class="header">Видео</h2>
+                    <p>Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики в простых на первый взгляд вещах.</p>
+                  </div>
+                  <div class="card__img card__img--bottom" style="background-image: url('../../img/about-1.jpg');"><a href=""></a></div>
+                </div>
+              </div>
+              <div class="col col--sm-4 col--sm-flex">
+                <div class="card card--images wow" data-wow-delay="0.4s">
+                  <div class="card__img card__img--top" style="background-image: url('../../img/news-1.jpg');"></div>
+                  <div class="card__content">
                     <h2 class="header">Новость</h2>
                     <time class="date">02 марта 2017</time>
                     <p>Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.</p>
                   </div>
                 </div>
               </div>
-              <div class="col col--xl-4 col--xl-flex flex-wrap">
-                <div class="card">
+              <div class="col col--sm-4 col--sm-flex flex-wrap">
+                <div class="card wow" data-wow-delay="0.6s">
                   <h2 class="header">О бренде</h2>
                   <p>Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.</p><a class="btn" href="">Подробнее</a>
                 </div>
-                <div class="card recipe">
+                <div class="card wow recipe" data-wow-delay="0.4s" style="background-image: url('../../img/recipe.jpg');">
                   <h2 class="header">Рецепт</h2><a class="btn" href="">Все рецепты</a>
                 </div>
               </div>
             </div>
             <div class="row cards">
-              <div class="col col--xl-4 col--xl-flex">
-                <div class="card card--small">
+              <div class="col col--sm-4 col--sm-flex">
+                <div class="card wow card--small" data-wow-delay="0.2s">
                   <h2 class="header">Документация по качеству</h2>
+                  <div class="document-slider"><a class="document" href=""><img src="img/sertificat.jpg" alt=""></a><a class="document" href=""><img src="img/sertificat.jpg" alt=""></a><a class="document" href=""><img src="img/sertificat.jpg" alt=""></a><a class="document" href=""><img src="img/sertificat.jpg" alt=""></a><a class="document" href=""><img src="img/sertificat.jpg" alt=""></a>
+                  </div>
                 </div>
               </div>
-              <div class="col col--xl-4 col--xl-flex">
-                <div class="card card--small">
+              <div class="col col--sm-3 col--sm-flex text--sm-center">
+                <div class="card wow card--small card--contacts" data-wow-delay="0.4s">
                   <h2 class="header">Наши контакты</h2><a class="btn" href="">Обратная связь</a>
                 </div>
               </div>
-              <div class="col col--xl-4 col--xl-flex">
-                <div class="card card--small"><strong>Горячая линия:</strong><strong>E-mail:</strong><strong>Почтовый адрес:</strong></div>
+              <div class="col col--sm-5 col--sm-flex">
+                <div class="card wow card--small index-contact" data-wow-delay="0.6s">
+                  <div class="index-contact__row"><strong>Горячая линия:</strong><span>8 800 100 4447</span></div>
+                  <div class="index-contact__row"><strong>E-mail:</strong><span>info@darykubany.ru</span></div>
+                  <div class="index-contact__row"><strong>Почтовый адрес:</strong><span>350020, РФ,<br>Краснодарский край, г.Краснодар,<br>ул.Рашпилевская, 179/1, оф. 810</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -100,10 +172,10 @@
         <footer class="main-footer">
           <div class="grid grid--container">
             <div class="row">
-              <div class="col col--xl-6">
+              <div class="col col--sm-6">
                 <div class="webformula"><span>Создание сайта — </span><a href="">Webformula</a></div>
               </div>
-              <div class="col col--xl-6">
+              <div class="col col--sm-6">
                 <div class="copyright"><span>Copyright © ООО "ЮЖНАЯ СОКОВАЯ КОМПАНИЯ"</span></div>
               </div>
             </div>
@@ -112,6 +184,7 @@
       </div>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

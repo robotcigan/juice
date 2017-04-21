@@ -3,17 +3,60 @@ extends layout.pug
 block content
   .action
     .row
-      .col.col--lg-5
-        .juice-pack
-          img(src="img/juice-pack.png", alt="")
-        .fruit
-          img(src="img/fruit.png", alt="")
+      .col.col--sm-5
+        .exposition
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-cherry.png", alt="")
+            .fruit
+              img(src="img/slider/4.png", alt="")
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-orange.png", alt="")
+            .fruit
+              img(src="img/slider/1.png", alt="")
+          .exposition__slide.active
+            .juice-pack
+              img(src="img/juice-pack-apple.png", alt="")
+            .fruit
+              img(src="img/slider/8.png", alt="")
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-carrot.png", alt="")
+            .fruit
+              img(src="img/slider/2.png", alt="")
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-peach.png", alt="")
+            .fruit
+              img(src="img/slider/9.png", alt="")
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-grapes.png", alt="")
+            .fruit
+              img(src="img/slider/3.png", alt="")
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-pumpkin.png", alt="")
+            .fruit
+              img(src="img/slider/7.png", alt="")
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-tomatos.png", alt="")
+            .fruit
+              img(src="img/slider/5.png", alt="")
+          .exposition__slide
+            .juice-pack
+              img(src="img/juice-pack-multy.png", alt="")
+            .fruit
+              img(src="img/slider/6.png", alt="")
         .stump
-      .col.col--lg-5.col--lg-offset-1
+      .col.col--sm-5.col--sm-offset-1
         .card.card--main
-          h1.header--h1 Медовые кубанские яблочки
           .row
-            .col.col--lg-8
+            .col.col--sm-12
+              h1.header--h1 Медовые кубанские яблочки
+            .col.col--sm-8
               p.primary Сияет сладким янтарём
                 br
                 | Медовым солнечным огнём.
@@ -28,38 +71,88 @@ block content
                 | В садах душистых созревает
                 br
                 | И нас здоровьем наполняет.
+            .col.col--sm-4.col--sm-align-bottom
+              .small-packs
+                .pack
+                  img(src="img/small-pack.png", alt="")
+                  span 1л
+                .pack
+                  img(src="img/small-pack-contur.png", alt="")
+                  span 0.2л
+  .row
+    .col.col--sm-12
+      .taste-container
+        .taste-choice
+          .taste
+            img(src="img/fruit/cherry.png", alt="")
+          .taste
+            img(src="img/fruit/orange.png", alt="")
+          .taste.active
+            img(src="img/fruit/apple.png", alt="")
+            span.taste__name Яблоко
+          .taste
+            img(src="img/fruit/carrot.png", alt="")
+          .taste
+            img(src="img/fruit/peach.png", alt="")
+          .taste
+            img(src="img/fruit/grapes.png", alt="")
+          .taste
+            img(src="img/fruit/pumpkin.png", alt="")
+          .taste
+            img(src="img/fruit/tomato.png", alt="")
+          .taste
+            img(src="img/fruit/mix.png", alt="")
+
+
   .content
     .row.cards
-      .col.col--xl-4.col--xl-flex
-        .card
-          h2.header Видео
-          p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики в простых на первый взгляд вещах.
-      .col.col--xl-4.col--xl-flex
-        .card.news
-          .news__img
-            img(src="img/news-1.jpg", alt="")
-          .news__content
+      .col.col--sm-4.col--sm-flex
+        .card.card--images.wow(data-wow-delay="0.2s")
+          .card__content
+            h2.header Видео
+            p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики в простых на первый взгляд вещах.
+          .card__img.card__img--bottom(style="background-image: url('../../img/about-1.jpg')")
+            a(href="")
+              //- iframe(style="background-image:url(img/about-1.jpg)" src="https://www.youtube.com/embed/GBsj1if1a0w" frameborder="0" allowfullscreen)
+      .col.col--sm-4.col--sm-flex
+        .card.card--images.wow(data-wow-delay="0.4s")
+          .card__img.card__img--top(style="background-image: url('../../img/news-1.jpg')")
+          .card__content
             h2.header Новость
             time.date 02 марта 2017
             p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.
-      .col.col--xl-4.col--xl-flex.flex-wrap
-        .card
+      .col.col--sm-4.col--sm-flex.flex-wrap
+        .card.wow(data-wow-delay="0.6s")
           h2.header О бренде
           p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.
           a(href="").btn Подробнее
-        .card.recipe
+        .card.wow.recipe(data-wow-delay="0.4s" style="background-image: url('../../img/recipe.jpg')")
           h2.header Рецепт
           a(href="").btn Все рецепты
     .row.cards
-      .col.col--xl-4.col--xl-flex
-        .card.card--small
+      .col.col--sm-4.col--sm-flex
+        .card.wow.card--small(data-wow-delay="0.2s")
           h2.header Документация по качеству
-      .col.col--xl-4.col--xl-flex
-        .card.card--small
+          .document-slider
+            - for(var i=0; i < 5; i++)
+              a(href="").document
+                img(src="img/sertificat.jpg", alt="")
+      .col.col--sm-3.col--sm-flex.text--sm-center
+        .card.wow.card--small.card--contacts(data-wow-delay="0.4s")
           h2.header Наши контакты
           a(href="").btn Обратная связь
-      .col.col--xl-4.col--xl-flex
-        .card.card--small
-          strong Горячая линия:
-          strong E-mail:
-          strong Почтовый адрес:
+      .col.col--sm-5.col--sm-flex
+        .card.wow.card--small.index-contact(data-wow-delay="0.6s")
+          .index-contact__row
+            strong Горячая линия:
+            span 8 800 100 4447
+          .index-contact__row
+            strong E-mail:
+            span info@darykubany.ru
+          .index-contact__row
+            strong Почтовый адрес:
+            span 350020, РФ,
+              br 
+              | Краснодарский край, г.Краснодар,
+              br
+              | ул.Рашпилевская, 179/1, оф. 810

@@ -1,0 +1,35 @@
+extends layout.pug
+
+block content
+  .content.content--inner
+    h1.inner-h1 Познакомьтесь с нашей продукцией
+    .juice-slider-container
+      .juice-slider
+        -for(var i = 0; i < 9; i++)
+          .slide
+            img(src="img/juice-2.png", alt="")
+      .juice-slider-left
+        .fa.fa-angle-left
+      .juice-slider-right
+        .fa.fa-angle-right
+
+
+    .row
+      .col.col--sm-4.text--sm-center
+        .pack
+          .pack-juice
+            img(src="img/juice-pack.png", alt="")
+          .pack-fruit
+            img(src="img/fruit.png", alt="")
+      .col.col--sm-6
+        .innner-h1 Яблочный сок
+        p Самым распространенным российским фруктом, безусловно, является яблоко. Кубанские яблоки отличаются от яблок из других регионов России. Они получают намного больше солнца. От этого, их сладость более глубокая и выразительная. Поэтому наш яблочный сок совсем не нужно подслаживать. Есть такое словосочетание «яблоки медовые». Оно точно про яблоки с Кубани.
+        ul
+          li — Изготовлен из концентрированного яблочного сока.
+          li — В 100 г нектара содержится 45 ккал, 11 г углеводов.
+          li — Не содержит консервантов и ГМО.
+          li — Рекомендуется употреблять детям от 3-х лет и старше.
+        p Упаковка: 0,2 л. и 1 л.
+      .col.col--sm-2
+
+

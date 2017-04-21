@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+  .content.content--inner
+    .row
+      .col.col--lg-6.col--lg-offset-3
+        h1.inner-h1 Обратная связь
+        form.form
+        input(type="text" placeholder="Иван").form-control
+        input(type="text" placeholder="Телефон").form-control
+        input(type="email" placeholder="E-mail *").form-control
+        textarea.form-control(placeholder="Сообщение")
+        p
+          span.text-red
+          | * Поля обязательные для заполнения
+        button.btn Отправить

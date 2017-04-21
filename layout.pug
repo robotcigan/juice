@@ -8,7 +8,9 @@ html(lang="ru")
     meta(name="format-detection" content="telephone=no")
     link(rel="stylesheet", href="styles/css/vendor.css")
     link(rel="stylesheet", href="styles/css/main.css")
-
+    script(src="js/wow.min.js")
+    script.
+      new WOW().init();
   body
     
     .bg
@@ -16,19 +18,19 @@ html(lang="ru")
       .grid.grid--container
 
         header.main-header
-          .row.row--xl-center
-            .col.col--xl-5
+          .row.row--sm-center
+            .col.col--sm-5
               nav.navigation
-                li.navigation__link: a(href="") О бренде
-                li.navigation__link: a(href="") Вкусы
-                li.navigation__link: a(href="") Новости
-            .col.col--xl-2.text--xl-center
+                li.navigation__link: a(href="about.html") О бренде
+                li.navigation__link: a(href="products.html") Вкусы
+                li.navigation__link: a(href="news.html") Новости
+            .col.col--sm-2.text--sm-center
               a(href="/").logo
-            .col.col--xl-5
+            .col.col--sm-5
               nav.navigation
-                li.navigation__link: a(href="") Видео
-                li.navigation__link: a(href="") Контакты
-                li.navigation__link: a(href="") Обратная связь
+                li.navigation__link: a(href="video.html") Видео
+                li.navigation__link: a(href="contacts.html") Контакты
+                li.navigation__link: a(href="callback.html") Обратная связь
 
 
 
@@ -38,14 +40,15 @@ html(lang="ru")
         footer.main-footer
           .grid.grid--container
             .row
-              .col.col--xl-6
+              .col.col--sm-6
                 .webformula
                   span Создание сайта — 
                   a(href="") Webformula
-              .col.col--xl-6
+              .col.col--sm-6
                 .copyright
                   span Copyright © ООО "ЮЖНАЯ СОКОВАЯ КОМПАНИЯ"
 
 
     script(src="js/jquery.min.js")
+    script(src="js/slick.min.js")
     script(src="js/main.js")

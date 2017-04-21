@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+  .content.content--inner
+    .row
+      .col.col--xl-10.col--xl-offset-1
+        h1.inner-h1 Новости
+        -for(var i = 0; i < 5; i++)
+          .inner-card
+            .inner-card__img(style="background-image: url('img/new.jpg')")
+            .inner-card__content
+              .header.inner-card__header Новые фруктово-овощные нектары «Дары Кубани»
+              time.time.inner-card__time
+              p В ассортименте торговой марки «Дары Кубани» появились полезные для здоровья фруктово-овощные нектары со вкусами яблоко-морковь и яблоко-тыква. 
+              a(href="").btn.inner-card__btn Узнать рецепт
+
+        include pagination.pug
+

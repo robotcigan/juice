@@ -1,33 +1,49 @@
+
 .video
   margin-bottom 5rem
   &__title
     color $primary
+  img
+    max-width 100%
 
-.inner-recipe
+.inner-card
   background #fff
   border-radius $radius
   display block
   margin-bottom 5rem
   clearfix()
   &__img
+    background-size cover
+    background-position 0
     border-radius $radius 0 0 $radius
     float left
+    height 30rem
     overflow hidden
-    width 50rem
-    img
-      display block
-      max-width 100%
+    width 40%
   &__content
     float left
     height 30rem
-    padding 4rem 5rem
+    padding 2rem 3rem
     position relative
+    width 60%
   &__header
     color $primary
+    display inline-block
+    width initial
   &__btn
     position absolute
-    bottom 0
-    right 0
+    bottom 2rem
+    right 2rem
+
+.offset
+  margin-bottom 5rem
+
+.time
+  color $gray
+
+.btn-group
+  display flex
+  justify-content space-around
 
 .pagination
   text-align center
@@ -38,13 +54,53 @@
     display inline-block
     margin-right 1rem
     text-align center
+    &--active
+      background-color #fff
     &:hover
       background-color #fff
     a
       color $primary
       display inline-block
-      line-height 5rem
-      height 5rem
+      line-height 4rem
+      height 4rem
       font-weight 600
       text-decoration none
-      width 5rem
+      width 4rem
+
+.float-img
+  float right
+  margin-left 4rem
+  margin-bottom 4rem
+
+
+.juice-slider-container
+  padding 0 8rem
+
+.juice-slider
+  .slide
+    img
+      transition transform .4s
+      &:hover
+        transform scale(1.1)
+  &-left,
+  &-right
+    background #fff
+    cursor pointer
+    padding 3rem 2rem
+    position absolute
+    text-align center
+    top 27rem
+    .fa
+      transition transform .2s ease
+  &-left
+    border-radius 0 $radius $radius 0
+    left 0
+    &:hover
+      .fa
+        transform translateX(-5px)
+  &-right
+    border-radius $radius 0 0 $radius
+    right 0
+    &:hover
+      .fa
+        transform translateX(5px)

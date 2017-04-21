@@ -1,6 +1,7 @@
 @keyframes fadeUp
   0%
     opacity 0
+    filter: blur(2px)
     transform translateY(10px)
   100%
     opacity 1
@@ -16,8 +17,9 @@
 
 @keyframes fadeLeft
   0%
-    opacity 0
-    transform translateX(-10px)
+    opacity .5
+    filter: blur(5px)
+    transform translateX(-90px)
   100%
     opacity 1
     transform none
