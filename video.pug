@@ -8,5 +8,10 @@ block content
         -for(var i = 0; i < 2; i++)
           .video
             .video__title.header Присоединяйтесь к нам!
-            .video__movie
-              img(src="img/video.jpg", alt="")
+            a(href="#modal").open-modal
+              .video__movie.video-link
+                img(src="img/video.jpg", alt="")
+
+
+  #modal.modal.video
+    iframe(style="background-image:url(img/about-1.jpg)" src="https://www.youtube.com/embed/GBsj1if1a0w" frameborder="0" allowfullscreen)

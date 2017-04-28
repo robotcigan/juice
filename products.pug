@@ -3,33 +3,205 @@ extends layout.pug
 block content
   .content.content--inner
     h1.inner-h1 Познакомьтесь с нашей продукцией
-    .juice-slider-container
-      .juice-slider
-        -for(var i = 0; i < 9; i++)
-          .slide
-            img(src="img/juice-2.png", alt="")
-      .juice-slider-left
+    .juice-slider-nav-container
+      .juice-slider-nav
+        .slide
+          img(src="img/juice-pack-cherry.png", alt="")
+        .slide
+          img(src="img/juice-pack-orange.png", alt="")
+        .slide
+          img(src="img/juice-pack-apple.png", alt="")
+        .slide
+          img(src="img/juice-pack-peach.png", alt="")
+        .slide
+          img(src="img/juice-pack-tomatos.png", alt="")
+        .slide
+          img(src="img/juice-pack-pumpkin.png", alt="")
+        .slide
+          img(src="img/juice-pack-carrot.png", alt="")
+        .slide
+          img(src="img/juice-pack-multy.png", alt="")
+        .slide
+          img(src="img/juice-pack-grapes.png", alt="")
+      .juice-slider-nav-left
         .fa.fa-angle-left
-      .juice-slider-right
+      .juice-slider-nav-right
         .fa.fa-angle-right
 
 
-    .row
-      .col.col--sm-4.text--sm-center
-        .pack
-          .pack-juice
-            img(src="img/juice-pack.png", alt="")
-          .pack-fruit
-            img(src="img/fruit.png", alt="")
-      .col.col--sm-6
-        .innner-h1 Яблочный сок
-        p Самым распространенным российским фруктом, безусловно, является яблоко. Кубанские яблоки отличаются от яблок из других регионов России. Они получают намного больше солнца. От этого, их сладость более глубокая и выразительная. Поэтому наш яблочный сок совсем не нужно подслаживать. Есть такое словосочетание «яблоки медовые». Оно точно про яблоки с Кубани.
-        ul
-          li — Изготовлен из концентрированного яблочного сока.
-          li — В 100 г нектара содержится 45 ккал, 11 г углеводов.
-          li — Не содержит консервантов и ГМО.
-          li — Рекомендуется употреблять детям от 3-х лет и старше.
-        p Упаковка: 0,2 л. и 1 л.
-      .col.col--sm-2
+    .tastes.juice-slider
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-cherry.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/4.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Нектар яблочно-вишневый осветленный
+            .text-primary
+              p Вишневые сады на Кубани в период своего цветения напоминают пушистые облака. Между белоснежными цветами вьются пчелы, кажется, опьяневшие от такой щедрости природы. Приходит время и белые лепестки слетают с веток, образуя кружева белоснежной пены на земле. Потом ягоды наливаются солнцем. Созревшие вишни на ветках похожи на яркие рубины, блестящие на солнце. Мы смешиваем вишню с яблоком, чтобы смягчить сладостью яркость вишневого вкуса. 
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.cherry
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
 
 
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-orange.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/1.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Нектар Апельсиновый
+            .text-primary
+              p Апельсины не растут на Кубани, но именно через Черное море и порты Краснодарского края апельсины оказываются в нашей стране. Можно сказать, что этот субтропический фрукт входит к нам через кубанские ворота.  Апельсиновый нектар – самый популярный заграничный гость на наших столах. При производстве его мы ориентируемся на максимально высокие мировые стандарты.
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.orange
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+            .pack.small-packs__small
+              span 0.2л
+
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-apple.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/8.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Яблочный сок
+            .text-primary
+              p Самым распространенным российским фруктом, безусловно, является яблоко. Кубанские яблоки отличаются от яблок из других регионов России. Они получают намного больше солнца. От этого, их сладость более глубокая и выразительная. Поэтому наш яблочный сок совсем не нужно подслаживать. Есть такое словосочетание «яблоки медовые». Оно точно про яблоки с Кубани.
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.apple
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+            .pack.small-packs__small
+              span 0.2л
+
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-peach.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/9.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Нектар персиково-яблочный с мякотью
+            .text-primary
+              p Предгорная местность Кубани, ближе к Черноморским курортам, идеальна для роста персиковых деревьев.  Здесь солнце еще ярче и теплее, а горные хребты Кавказа защищают долины от холодных ветров. Персик цветет нежно розовым цветом. Когда плод созревает, он сохраняет в своем аромате первозданную нежность своих цветков.  Кубанское яблоко добавляет к вкусу яркие сладкие тона. 
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.peach
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+            .pack.small-packs__small
+              span 0.2л
+
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-tomatos.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/5.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Сок томатный восстановленный
+            .text-primary
+              p Испокон веков Кубань славилась своими томатами. О своем созревании томаты «сообщают» нам сочной окраской и пышностью «округлых форм».
+                br
+                | Во время сбора урожая, стоит только обхватить его рукой и немного качнуть из стороны в сторону. Красный плод легко снимается, и заполняет своею яркостью и сочностью всю ладонь. В этот миг в руке как будто собрана вся свежесть южного летнего утра, и щедрость теплого южного солнца. 
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.tomatos
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-pumpkin.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/7.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Нектар тыквенно-яблочный с мякотью
+            .text-primary
+              p Кубанская тыква  вбирает в себя все южное лето без остатка. Когда урожай других овощей и фруктов уже собран, красавица тыква продолжает свой рост, и наполняется полезными веществами. Поэтому в тыквенном нектаре вмещается все кубанское лето! Вместе с яблоком, вкус кубанского лета становится не только полезным, но и сладким.
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.pumpkin
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+
+
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-carrot.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/2.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Нектар морквно-яблочный с мякотью
+            .text-primary
+              p На Кубани морковка вырастает бойко. Мягкая земля помогает расти корню ровно и гладко, а теплые летние дожди поят сочные плоды. Когда идет летний дождь, земля смягчается и открывает края оранжевой морковки. Они как кусочки солнца проглядывают из-за темных тучек. Вместе с кубанским яблоком, нектар обретает вкусовую гармонию. 
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.carrot
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-multy.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/6.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Нектар из смеси фруктов тропик
+            .text-primary
+              p Экзотические фрукты пленяют своими необычными названиями и огромными пространствами, разделяющими нашу страну и места их роста. Тропики так далеки, но нектар из тропических фруктов дает нам возможность как будто побывать в этом мире вечного лета, наполненного сладостью ананасов, бананов, манго и яркого солнца. 
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.mix
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+            .pack.small-packs__small
+              span 0.2л
+
+      .juice-slider-slide
+        .row
+          .col.col--lg-3.col--xs-6.col--xs-offset-1.col--lg-offset-1.text--lg-center
+            .big-pack
+              .big-pack__pack
+                img(src="img/juice-pack-grapes.png", alt="")
+              .big-pack__fruit
+                img(src="img/slider/3.png", alt="")
+              .big-pack__pack
+          .col.col--lg-5.juice-slider__text
+            .inner-h1.inner-h1--type-2 Нектар яблочно-виноградный
+            .text-primary
+              p Кубань является «виноградным регионом» России. Самые обширные виноградные поля находятся в районах Анапы, Тамани и Геленджика. Так что в каждой ягоде есть частица Черноморских и Азовских курортов Кубани. Объединив виноград и яблоко в одном нектаре, мы повторили то, что сделала сама природа, наделив Кубань таким благоприятным для фруктов и ягод климатом.
+          .col.col--lg-2.col--xs-4.small-packs.small-packs--special.grapes
+            .header Упаковка
+            .pack.small-packs__big
+              span 1л
+            .pack.small-packs__small
+              span 0.2л

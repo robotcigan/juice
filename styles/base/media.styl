@@ -1,10 +1,209 @@
-@media(max-width 1200px)
+@media(min-width 1650px)
+  .juice-pack
+    bottom 46rem
+    left 15rem
+    height 60rem
+    &.packs
+      bottom 49rem
+      height 52rem
+      left 5rem
+  .fruit
+    left 8rem
+    width 48rem
+  .stump
+    bottom 26rem
+    height 35rem
+  .card--main
+    top 24rem
+  .card
+    &--without-icons
+      top 32rem
+
+@media(max-width 1500px)
+  .juice-pack,
+  .juice-pack.packs
+    height 36rem
+  .juice-pack.packs
+    bottom 46rem
+  .stump
+    bottom 24rem
+    left 2rem
+    width 42rem
+  .fruit
+    bottom 43rem
+    width 25rem
+  // .card
+  //   &--main
+  //     margin-left 5rem
+  //     margin-top -11rem
+
+@media(max-width 1350px)
   .grid--container
     max-width 98%
+  .taste-choice
+    padding-left 1rem
+    padding-right 1rem
+    .taste.active .taste__name
+      font-size 1.1rem
+
+@media(max-width 1200px)
   .content
     padding 2rem
+
+@media(max-width 1190px)
+  .float-social-icons
+    display none
+  .mobile-socials
+    display block
+  .action
+    &__left,
+    &__right
+      display block
+  .content
+    padding-top 3rem
+  .action
+    margin-left 0
+  .taste-choice
+    display none
+  .card
+    &--main
+      top 15rem
+      // margin-left 3rem
+      // margin-top -9rem
+    .header
+      font-size 2.4rem
+    &--without-icons
+      margin-left 5rem
+      top 22rem
+  .juice-pack
+    animation fadeLeftMobile 1s ease
+    bottom 48rem
+    &.packs
+      bottom 45rem
+  .fruit
+    animation fadeLeftMobile 1.2s ease
+  .juice-slider-nav
+    .slide
+      img
+        &:hover
+          transform scale(1.3)
+  .main-footer
+    height 15rem
+    position initial
+    padding-bottom 0
+    margin 0
+
+@media(max-width 1000px)
+  .bg
+    background url('../../img/inner-bg.jpg')
+    background-size cover
+  .menu-open__open
+    display block
+  .main-header
+    .navigation
+      display none
+  .card
+    &--main
+      display none !important
+  .action
+    height 75rem
+  .juice-pack,
+  .juice-pack.packs
+    left 50%
+    margin-left -9rem
+    width 18rem
+  .juice-pack.packs
+    margin-left -17rem
+    width 35rem
+  .fruit
+    left 50%
+    margin-left -12.5rem
+    width 25rem
+  .stump
+    left 50%
+    margin-left -21rem
+    width 42rem
+
+@media(max-width 768px)
+  .cards
+    &:last-child
+      .card
+        margin-bottom 4rem
+      .col:last-child .card
+        margin-bottom 0
+  .inner-card
+    &__img
+      border-radius $radius $radius 0 0
+      float none
+      width 100%
+    &__content
+      height initial
+      padding 2rem
+      width 100%
+    &__btn
+      position initial
+  .juice-slider
+    &__text
+      order 3
+      margin-top 5rem
+  .small-packs--special
+    margin-left 0
+  .juice-slider-nav
+    &-left,
+    &-right
+      top 35rem
+
 @media(max-width 767px)
   .inner-h1
     font-size 4rem
   .content
     padding 2rem .5rem
+    padding-top 3rem
+  .mobile-menu
+    .logo
+      margin-bottom 1rem
+      margin-top 2rem
+  .mobile-nav
+    &__link
+      margin-bottom 1rem
+  .card__img--bottom
+    position relative
+  .modal
+    &.video
+      max-width 90%
+    iframe
+      height 25rem
+
+
+@media (max-height: 650px) and (min-width: 1300px)
+  .juice-pack,
+  .juice-pack.packs
+    transform scale(.8) translateY(10%)
+  .fruit
+    transform scale(.8) translateY(10%)
+  .stump
+    transform scale(.8) translateY(-4%)
+  .card.card--main
+    display none !important
+
+@media (max-height: 600px) and (min-width: 1300px)
+  .juice-pack,
+  .juice-pack.packs
+    transform scale(.7) translateY(15%)
+  .fruit
+    transform scale(.7) translateY(15%)
+  .stump
+    transform scale(.8) translateY(-2%)
+
+@media (max-height: 570px) and (min-width: 1300px)
+  .juice-pack,
+  .juice-pack.packs
+    transform scale(.6) translateY(30%)
+  .fruit
+    transform scale(.6) translateY(30%)
+  .stump
+    transform scale(.8) translateY(0%)
+
+@media screen and (min-width 1200px) and (min-height 1000px)
+  .action
+    height 85rem

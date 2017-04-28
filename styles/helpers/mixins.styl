@@ -11,3 +11,10 @@ circle($size)
 size($height, $width)
   height $height
   width $width
+
+tasteChoise($name, $color)
+  &.taste--{$name}
+    &:before
+      border 1px solid $color
+    & .taste__name
+      background-color $color

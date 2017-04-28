@@ -1,0 +1,150 @@
+.modal
+  background #fff
+  box-shadow $shadow
+  border-radius $radius
+  display none
+  margin 0 auto
+  max-width 65%
+  padding 6rem 4rem
+  position relative
+  width auto
+  &__header
+    color $primary
+    font-family $customFont
+    font-size 4rem
+    font-weight 600
+    margin-bottom 2rem
+  &__img
+    background-size cover !important
+    background-position 50%
+    border-radius 50%
+    circle(28rem)
+    display inline-block
+  iframe
+    height 40rem
+    width 100%
+  &.video
+    background transparent
+    padding 0
+    max-width 50%
+    button.mfp-close
+      margin-right 0
+      margin-top -5rem
+
+
+
+.mfp-ready
+  .modal
+    display block
+.mfp-close
+  font-size 4rem
+  margin-top 0
+
+.mfp-close
+  top 3rem
+  margin-right 2rem
+  right -7rem !important
+
+.mfp-close-btn-in .mfp-close
+  color $gray
+
+.preloader
+  display: block
+  position: absolute
+  left: 50%
+  top: 50%
+  width: 150px
+  height: 150px
+  margin: -75px 0 0 -75px
+  border-radius: 50%
+  border: 3px solid transparent
+  border-top-color: #16a085
+  animation: spin 1.7s linear infinite
+  z-index: 11
+  // &--disable
+  //   display none
+  
+  &:before
+    content: ""
+    position: absolute
+    top: 5px
+    left: 5px
+    right: 5px
+    bottom: 5px
+    border-radius: 50%
+    border: 3px solid transparent
+    border-top-color: #e74c3c
+    animation: spin-reverse .6s linear infinite
+  
+  
+  &:after
+    content: ""
+    position: absolute
+    top: 15px
+    left: 15px
+    right: 15px
+    bottom: 15px
+    border-radius: 50%
+    border: 3px solid transparent
+    border-top-color: #f9c922
+    animation: spin 1s linear infinite
+  
+
+
+// Bourbon mixins
+@keyframes spin
+  0% 
+    transform rotate(0deg)
+  
+  100%
+    transform rotate(360deg)
+  
+
+
+@keyframes spin-reverse
+  0% 
+    transform rotate(0deg)
+  
+  100%
+    transform rotate(-360deg)
+  
+
+
+.preloader-wrapper .loader-section
+  position: fixed
+  top: 0
+  width: 51%
+  height: 100%
+  background: #222
+  z-index: 10
+
+
+.preloader-wrapper .loader-section.section-left
+  left: 0
+
+
+.preloader-wrapper .loader-section.section-right
+  right: 0
+
+
+/* Loaded styles */
+
+.loaded .preloader-wrapper .loader-section.section-left
+  transform: translateX(-100%)
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
+
+.loaded .preloader-wrapper .loader-section.section-right
+  transform: translateX(100%)
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
+
+.loaded .preloader
+  opacity: 0
+  transition: all 0.3s ease-out
+
+
+.loaded .preloader-wrapper
+  visibility: hidden
+  transform: translateY(-100%)
+  transition: all 0.3s 1s ease-out

@@ -73,15 +73,106 @@
   margin-bottom 4rem
 
 
-.juice-slider-container
+.small-packs
+  .pack
+    position relative
+  &__big
+    background url('../../img/big-pack-contur.png') no-repeat
+    background-size contain
+    display block
+    height 13rem
+    width 4rem
+  &__small
+    background url('../../img/small-pack-contur.png') no-repeat
+    background-size contain
+    display block
+    height 7rem
+    width 3rem
+  span
+    position absolute
+    bottom -20px
+    left 0
+    right 0
+
+.juice-slider-nav-container
   padding 0 8rem
 
+
 .juice-slider
+  &-slide
+    padding-bottom 4rem
+
+.small-packs
+  &.cherry
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/1.png') no-repeat
+  &.orange
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/2.png') no-repeat
+      &__small:hover
+        background url('../../img/small packs/2.png') no-repeat
+  &.apple
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/3.png') no-repeat
+      &__small:hover
+        background url('../../img/small packs/3.png') no-repeat
+  &.peach
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/5.png') no-repeat
+      &__small:hover
+        background url('../../img/small packs/5.png') no-repeat
+  &.tomatos
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/6.png') no-repeat
+  &.peach
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/5.png') no-repeat
+      &__small:hover
+        background url('../../img/small packs/5.png') no-repeat
+  &.pumpkin
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/7.png') no-repeat
+      &__small:hover
+        background url('../../img/small packs/7.png') no-repeat
+  &.carrot
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/8.png') no-repeat
+  &.mix
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/9.png') no-repeat
+      &__small:hover
+        background url('../../img/small packs/4.png') no-repeat
+  &.grapes
+    .small-packs
+      &__big:hover
+        background url('../../img/big packs/4.png') no-repeat
+      &__small:hover
+        background url('../../img/small packs/1.png') no-repeat
+
+.juice-slider-nav
   .slide
+    cursor pointer
+    height 36rem
+    padding 4.2rem 2rem
     img
+      max-height 100%
       transition transform .4s
       &:hover
-        transform scale(1.1)
+        transform scale(1.05)
+  .slick-center
+    img
+      transform scale(1.3)
+      &:hover
+        transform scale(1.3)
   &-left,
   &-right
     background #fff
@@ -89,7 +180,7 @@
     padding 3rem 2rem
     position absolute
     text-align center
-    top 27rem
+    top 30rem
     .fa
       transition transform .2s ease
   &-left
@@ -104,3 +195,31 @@
     &:hover
       .fa
         transform translateX(5px)
+
+
+
+.tastes
+  margin-top 8rem
+
+.big-pack
+  height 36rem
+  padding-right 4rem
+  position relative
+  width 18rem
+  img
+    max-height 100%
+  &__pack
+    bottom 0
+    display inline-block
+    height 35rem
+    left 0
+    position absolute
+  &__fruit
+    bottom -4rem
+    display inline-block
+    left 0
+    position absolute
+    width 25rem
+    img
+      max-width 100%
+

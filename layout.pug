@@ -19,18 +19,42 @@ html(lang="ru")
 
         header.main-header
           .row.row--sm-center
-            .col.col--sm-5
+            .col.col--lg-5
               nav.navigation
                 li.navigation__link: a(href="about.html") О бренде
                 li.navigation__link: a(href="products.html") Вкусы
                 li.navigation__link: a(href="news.html") Новости
-            .col.col--sm-2.text--sm-center
-              a(href="/").logo
-            .col.col--sm-5
+            .col.col--lg-2.text--lg-center
+              a(href="/juice").logo
+            .col.col--lg-5
               nav.navigation
                 li.navigation__link: a(href="video.html") Видео
                 li.navigation__link: a(href="contacts.html") Контакты
                 li.navigation__link: a(href="callback.html") Обратная связь
+              .menu-open__open
+
+        header.mobile-menu
+          .text-center
+            a(href="/").logo.logo--mobile
+          .mobile-nav
+            li.mobile-nav__link: a(href="about.html") О бренде
+            li.mobile-nav__link: a(href="products.html") Вкусы
+            li.mobile-nav__link: a(href="news.html") Новости
+            li.mobile-nav__link: a(href="video.html") Видео
+            li.mobile-nav__link: a(href="contacts.html") Контакты
+            li.mobile-nav__link: a(href="callback.html") Обратная связь
+          .social-icons.text-center
+            a(href="").social-icon
+              i.fa.fa-vk
+            a(href="").social-icon
+              i.fa.fa-facebook
+            a(href="").social-icon
+              i.fa.fa-odnoklassniki
+            a(href="").social-icon
+              i.fa.fa-instagram
+            a(href="").social-icon
+              i.fa.fa-youtube
+          .mobile-menu__close
 
 
 
@@ -40,15 +64,42 @@ html(lang="ru")
         footer.main-footer
           .grid.grid--container
             .row
+              .col.col--sm-12.mobile-socials
+                .social-icons
+                  a(href="").social-icon
+                    i.fa.fa-vk
+                  a(href="").social-icon
+                    i.fa.fa-facebook
+                  a(href="").social-icon
+                    i.fa.fa-odnoklassniki
+                  a(href="").social-icon
+                    i.fa.fa-instagram
+                  a(href="").social-icon
+                    i.fa.fa-youtube
               .col.col--sm-6
                 .webformula
                   span Создание сайта — 
                   a(href="") Webformula
-              .col.col--sm-6
+              .col.col--sm-4.col--sm-offset-2
                 .copyright
                   span Copyright © ООО "ЮЖНАЯ СОКОВАЯ КОМПАНИЯ"
 
 
+        .float-social-icons
+          .social-icons
+            a(href="").social-icon
+              i.fa.fa-vk
+            a(href="").social-icon
+              i.fa.fa-facebook
+            a(href="").social-icon
+              i.fa.fa-odnoklassniki
+            a(href="").social-icon
+              i.fa.fa-instagram
+            a(href="").social-icon
+              i.fa.fa-youtube
+
+
     script(src="js/jquery.min.js")
     script(src="js/slick.min.js")
+    script(src="js/jquery.magnific-popup.min.js")
     script(src="js/main.js")

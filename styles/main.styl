@@ -6,15 +6,19 @@
 @import 'base/form.styl'
 @import 'pages/index.styl'
 @import 'pages/inner.styl'
+@import 'pages/modal.styl'
 
-
+body
+  min-height 100%
 
 .grid--container
   max-width 1300px
 
 .bg
-  // background-size cover
-  max-height 2300px
+  background-size cover
+  padding-bottom 8rem
+  position relative
+  // max-height 2300px
 
 .adaptive-img
   display block
@@ -26,6 +30,8 @@
 .main-header
   margin-bottom 10rem
   padding-top 3rem
+  position relative
+  z-index 50
 
 .logo
   background url('../../img/logo.png') no-repeat
@@ -33,6 +39,10 @@
   display inline-block
   height 10rem
   width 13rem
+  &--mobile
+    background url('../../img/logo-mobile.png') no-repeat
+    margin-bottom 2rem
+    margin-top 5rem
 
 .navigation
   display flex
@@ -64,28 +74,217 @@
         &:after
           width 100%
 
+.mobile-menu
+  background url('../../img/mobile-bg.jpg')
+  background-size cover
+  // display none
+  height 110vh
+  left 0
+  position fixed
+  top 0
+  transition all .4s ease .1s
+  transform translateX(-100%)
+  visibility hidden
+  width 100%
+  z-index 200
+  &--active
+    transform none
+    visibility visible
+
+.mobile-nav
+  text-align center
+  list-style-type none
+  &__link
+    margin-bottom 3rem
+    a
+      color $primary
+      display inline-block
+      font-family $customFont
+      font-size 3rem
+      font-weight 600
+      letter-spacing 1px
+      text-transform uppercase
+      text-decoration none
+
+
+.social-share
+  p
+    font-weight 600
+    margin-bottom 1rem
+
+.social-icons
+  margin-top 3rem
+  // padding-bottom 2rem
+  .social-icon
+    display inline-block
+    margin-right 1rem
+    text-decoration none
+    &:last-child
+      margin-right 0
+  .fa
+    border-radius 50%
+    border 2px solid $primary
+    circle(4.5rem)
+    color $primary
+    display table-cell
+    font-size 2.4rem
+    margin-right 1rem
+    vertical-align middle
+    text-decoration none
+
+.float-social-icons
+  position fixed
+  right 2rem
+  top 15rem
+  width 4rem
+  z-index 50
+  .social-icon
+    display inline-block
+    margin-bottom 1rem
+    margin-right 0
+    text-align center
+  .fa
+    border 2px solid #fff
+    color #fff
+    circle(4rem)
+    font-size 1.8rem
+
+.mobile-socials
+  display none
+  margin 2rem 0
+  text-align center
+  .social-icon
+    margin-right 1rem
+    &:last-child
+      margin-right 0
+  .fa
+    border 2px solid #fff
+    circle(5rem)
+    color #fff
+
+
+.menu-open__open
+  display none
+  position absolute
+  right 5%
+  top 5rem
+  &,
+  &:after,
+  &:before
+    background #fff
+    height 2px
+    transition all .2s
+    width 30px
+  &:before
+    background #fff
+    bottom 8px
+    content ""
+    left 0
+    position absolute
+  &:after
+    background #fff
+    content ""
+    position absolute
+    left 0
+    top 8px
+
+.mobile-menu__close
+  height: 3rem
+  position: absolute
+  right: 1rem
+  top: 5rem
+  padding-right: 10%
+  width: 3rem
+
+.mobile-menu__close:before, .mobile-menu__close:after
+  content ''
+  background $primary
+  height 2px
+  left 15%
+  position absolute
+  width 3rem
+
+.mobile-menu__close:before
+  transform rotate(45deg)
+
+.mobile-menu__close:after
+  transform rotate(-45deg)
+
+
 .flex-wrap
   flex-wrap wrap
 
 .text-center
   text-align center
 
+.small-packs
+  .pack
+    display inline-block
+    margin-right 1rem
+    text-align center
+  img
+    display block
+    margin-bottom .3rem
+  span
+    color $primary
+    font-family $customFont
+    font-size 1.6rem
+  &--special
+    margin-left 6rem
+    margin-top 7rem
+    .header
+      color $primary
+  
+
+.social-share
+  margin-top 2rem
+  text-align center
+  &--news
+    margin-bottom 4rem
+    margin-top 0rem
+    text-align initial
 
 .content
   background rgba(#fff, .5)
   border-radius $radius
-  padding 4rem 3rem
+  padding 3rem 2rem
   position relative
   z-index 50
   &--inner
     background rgba(#fff, .9)
 
+.text-red
+  color red
 
 .main-footer
   color #fff
+  height 3rem
   margin-top 5rem
   padding-bottom 5rem
+  position absolute
+  bottom 0
+  right 0
+  left 0
+  margin auto
   a
     color #fff
+  .webformula,
+  .copyright
+    bottom 3rem
+
+
+.video-link
+  position relative
+  &:after
+    background url('../../img/play.png') no-repeat 50%
+    background-size contain
+    bottom 0
+    content ''
+    circle(9rem)
+    left 0
+    margin auto
+    position absolute
+    right 0
+    top 0
 
 @import './base/media.styl'

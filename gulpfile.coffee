@@ -21,7 +21,7 @@ gulp.task 'stylus', ->
 			# compress: true
 		.on 'error', (err) ->
 			console.log err
-		# .pipe autoprefixer({browsers: ['> 1%', 'last 5 version','IE 10'], cascade: false})
+		.pipe autoprefixer({browsers: ['> 1%', 'last 5 version','IE 9'], cascade: false})
 		# .pipe uglifycss
 		# 	'uglyComments': true
 		# .pipe sourcemaps.write('.')

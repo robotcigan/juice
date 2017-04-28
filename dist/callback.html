@@ -16,22 +16,36 @@
       <div class="grid grid--container">
         <header class="main-header">
           <div class="row row--sm-center">
-            <div class="col col--sm-5">
+            <div class="col col--lg-5">
               <nav class="navigation">
                 <li class="navigation__link"><a href="about.html">О бренде</a></li>
                 <li class="navigation__link"><a href="products.html">Вкусы</a></li>
                 <li class="navigation__link"><a href="news.html">Новости</a></li>
               </nav>
             </div>
-            <div class="col col--sm-2 text--sm-center"><a class="logo" href="/"></a></div>
-            <div class="col col--sm-5">
+            <div class="col col--lg-2 text--lg-center"><a class="logo" href="/juice"></a></div>
+            <div class="col col--lg-5">
               <nav class="navigation">
                 <li class="navigation__link"><a href="video.html">Видео</a></li>
                 <li class="navigation__link"><a href="contacts.html">Контакты</a></li>
                 <li class="navigation__link"><a href="callback.html">Обратная связь</a></li>
               </nav>
+              <div class="menu-open__open"></div>
             </div>
           </div>
+        </header>
+        <header class="mobile-menu">
+          <div class="text-center"><a class="logo logo--mobile" href="/"></a></div>
+          <div class="mobile-nav">
+            <li class="mobile-nav__link"><a href="about.html">О бренде</a></li>
+            <li class="mobile-nav__link"><a href="products.html">Вкусы</a></li>
+            <li class="mobile-nav__link"><a href="news.html">Новости</a></li>
+            <li class="mobile-nav__link"><a href="video.html">Видео</a></li>
+            <li class="mobile-nav__link"><a href="contacts.html">Контакты</a></li>
+            <li class="mobile-nav__link"><a href="callback.html">Обратная связь</a></li>
+          </div>
+          <div class="social-icons text-center"><a class="social-icon" href=""><i class="fa fa-vk"></i></a><a class="social-icon" href=""><i class="fa fa-facebook"></i></a><a class="social-icon" href=""><i class="fa fa-odnoklassniki"></i></a><a class="social-icon" href=""><i class="fa fa-instagram"></i></a><a class="social-icon" href=""><i class="fa fa-youtube"></i></a></div>
+          <div class="mobile-menu__close"></div>
         </header>
         <main>
           <div class="content content--inner">
@@ -39,7 +53,7 @@
               <div class="col col--lg-6 col--lg-offset-3">
                 <h1 class="inner-h1">Обратная связь</h1>
                 <form class="form"></form>
-                <input class="form-control" type="text" placeholder="Иван">
+                <input class="form-control" type="text" placeholder="Имя *">
                 <input class="form-control" type="text" placeholder="Телефон">
                 <input class="form-control" type="email" placeholder="E-mail *">
                 <textarea class="form-control" placeholder="Сообщение"></textarea>
@@ -52,19 +66,26 @@
         <footer class="main-footer">
           <div class="grid grid--container">
             <div class="row">
+              <div class="col col--sm-12 mobile-socials">
+                <div class="social-icons"><a class="social-icon" href=""><i class="fa fa-vk"></i></a><a class="social-icon" href=""><i class="fa fa-facebook"></i></a><a class="social-icon" href=""><i class="fa fa-odnoklassniki"></i></a><a class="social-icon" href=""><i class="fa fa-instagram"></i></a><a class="social-icon" href=""><i class="fa fa-youtube"></i></a></div>
+              </div>
               <div class="col col--sm-6">
                 <div class="webformula"><span>Создание сайта — </span><a href="">Webformula</a></div>
               </div>
-              <div class="col col--sm-6">
+              <div class="col col--sm-4 col--sm-offset-2">
                 <div class="copyright"><span>Copyright © ООО "ЮЖНАЯ СОКОВАЯ КОМПАНИЯ"</span></div>
               </div>
             </div>
           </div>
         </footer>
+        <div class="float-social-icons">
+          <div class="social-icons"><a class="social-icon" href=""><i class="fa fa-vk"></i></a><a class="social-icon" href=""><i class="fa fa-facebook"></i></a><a class="social-icon" href=""><i class="fa fa-odnoklassniki"></i></a><a class="social-icon" href=""><i class="fa fa-instagram"></i></a><a class="social-icon" href=""><i class="fa fa-youtube"></i></a></div>
+        </div>
       </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

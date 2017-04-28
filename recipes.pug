@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content
-  .content
+  .content.content--inner
     .row
       .col.col--xl-10.col--xl-offset-1
         h1.inner-h1 Рецепты
@@ -17,7 +17,29 @@ block content
                 | Сливки 33% — 225 г;
                 br
                 | Желатин листовой — 10 г.
-              a(href="").btn.inner-card__btn Узнать рецепт
+              a(href="#modal").btn.inner-card__btn Узнать рецепт
+
 
         include pagination.pug
+
+    #modal.modal
+      //- .preloader
+      .row
+        .col.col--sm-4.text--sm-center
+          .modal__img(style="background-image: url('img/recipe.jpg')")
+          .social-share
+            script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+            script(src="//yastatic.net/share2/share.js")
+            .ya-share2(data-services="vkontakte,facebook,odnoklassniki" data-counter="")
+        .col.col--sm-8
+          .modal__header Апельси­новый пудинг
+          .text-primary
+            p Способ приготовления:
+            p 1. Нагрейте духовку до 160 градусов. Нагрейте емкость с водой до кипения на среднем огне;
+            p 2. Взбейте с помощью венчика 4 желтка, 1 яйцо, апельсиновый Rich, сахар, лимонный сок, сливки до полного растворения сахара; 
+            p 3. Поместите 4 порционные формочки в форму для выпечки, положите в порционные формочки полученную массу. Налейте кипящую воду в форму для выпечки до половины высоты порционных формочек;
+            p 4. Накройте форму алюминиевой фольгой. Готовьте около 40 минут, пудинг должен подняться примерно до края формочек;
+            p 5. Выньте формочки и охладите;
+            p 6. Поставьте в холодильник как минимум на 2 часа (лучше на сутки);
+            p 7. Перед подачей украсьте маленькими кусочками апельсина.
 

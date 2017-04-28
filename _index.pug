@@ -2,9 +2,12 @@ extends layout.pug
 
 block content
   .action
-    .row
+    .row.row--sm-center
       .col.col--sm-5
         .exposition
+          .exposition__slide.active
+            .juice-pack.packs
+              img(src="img/packs.png", alt="")
           .exposition__slide
             .juice-pack
               img(src="img/juice-pack-cherry.png", alt="")
@@ -15,7 +18,7 @@ block content
               img(src="img/juice-pack-orange.png", alt="")
             .fruit
               img(src="img/slider/1.png", alt="")
-          .exposition__slide.active
+          .exposition__slide
             .juice-pack
               img(src="img/juice-pack-apple.png", alt="")
             .fruit
@@ -51,97 +54,328 @@ block content
             .fruit
               img(src="img/slider/6.png", alt="")
         .stump
-      .col.col--sm-5.col--sm-offset-1
-        .card.card--main
-          .row
-            .col.col--sm-12
-              h1.header--h1 Медовые кубанские яблочки
-            .col.col--sm-8
-              p.primary Сияет сладким янтарём
-                br
-                | Медовым солнечным огнём.
-                br
-                | Над всеми фруктами царит
-                br
-                | Нам о Кубани говорит.
-              p.primary Вот это яблоко, оно
-                br
-                | Кубанским солнышком полно
-                br
-                | В садах душистых созревает
-                br
-                | И нас здоровьем наполняет.
-            .col.col--sm-4.col--sm-align-bottom
-              .small-packs
-                .pack
-                  img(src="img/small-pack.png", alt="")
-                  span 1л
-                .pack
-                  img(src="img/small-pack-contur.png", alt="")
-                  span 0.2л
-  .row
-    .col.col--sm-12
-      .taste-container
-        .taste-choice
-          .taste
-            img(src="img/fruit/cherry.png", alt="")
-          .taste
-            img(src="img/fruit/orange.png", alt="")
-          .taste.active
-            img(src="img/fruit/apple.png", alt="")
-            span.taste__name Яблоко
-          .taste
-            img(src="img/fruit/carrot.png", alt="")
-          .taste
-            img(src="img/fruit/peach.png", alt="")
-          .taste
-            img(src="img/fruit/grapes.png", alt="")
-          .taste
-            img(src="img/fruit/pumpkin.png", alt="")
-          .taste
-            img(src="img/fruit/tomato.png", alt="")
-          .taste
-            img(src="img/fruit/mix.png", alt="")
+      .col.col--md-6.col--md-offset-0.col--xl-5.col--xl-offset-1
+
+        .main-cards
+          .card.card--main.active.card--without-icons
+            .row
+              .col.col--sm-12
+                h1.header--h1 Кубань – это лето России
+              .col.col--sm-12
+                p.primary Кубань – это лето России, наполненное солнцем, морем, южным гостеприимством и фруктовым изобилием. В соках и нектарах «Дары Кубани» мы сохраняем это лето, с его теплым морским ветром, ярким южным солнцем, вкусом и ароматом свежих кубанских фруктов.
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Яблочно-вишневые рубиновые бусы южного лета
+              .col.col--sm-8
+                p.primary На солнце ягода горит
+                  br
+                  | О летних днях нам говорит
+                  br
+                  | Рубином ярким на ветру
+                  br
+                  | Мерцают вишни сквозь листву.
+                p.primary А рядом яблочный рассвет
+                  br
+                  | Кубанским солнышком согрет
+                  br
+                  | Прекрасный с вишнею дуэт
+                  br
+                  | Нам сочный, летний шлют привет.
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.cherry
+                  .pack.small-packs__big
+                    span 1л
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Апельсиновый субтропический привет
+              .col.col--sm-8
+                p.primary Словно гордый господин
+                  br
+                  | В гости входит апельсин.
+                  br
+                  | К нам его корабль везет
+                  br
+                  | Ждет его кубанский порт.
+                p.primary Витаминовый десант
+                  br
+                  | Каждый встрече этой рад.
+                  br
+                  | Солнца яркий добрый свет
+                  br
+                  | Субтропический привет!
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.orange
+                  .pack.small-packs__big
+                    span 1л
+                  .pack.small-packs__small
+                    span 0.2л
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Медовые кубанские яблочки
+              .col.col--sm-8
+                p.primary Сияет сладким янтарём
+                  br
+                  | Медовым солнечным огнём.
+                  br
+                  | Над всеми фруктами царит
+                  br
+                  | Нам о Кубани говорит.
+                p.primary Вот это яблоко, оно
+                  br
+                  | Кубанским солнышком полно
+                  br
+                  | В садах душистых созревает
+                  br
+                  | И нас здоровьем наполняет.
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.apple
+                  .pack.small-packs__big
+                    span 1л
+                  .pack.small-packs__small
+                    span 0.2л
+
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Оранжевое солнечное настроение
+              .col.col--sm-8
+                p.primary На грядке вырастает бойко
+                  br
+                  | С Кубани сочная  морковка,
+                  br
+                  | За нею яблоко спешит
+                  br
+                  | Румянец на щеках горит.
+                p.primary В бокале солнечного цвета
+                  br
+                  | Увидеть можно наше лето.
+                  br
+                  | Оно подарит нам веселье
+                  br
+                  | Оранжевое настроенье!
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.carrot
+                  .pack.small-packs__big
+                    span 1л
+
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Нектар персиково-яблочный с мякотью
+              .col.col--sm-8
+                p.primary На Кубани персик нежный
+                  br
+                  | Греет солнышком бока
+                  br
+                  | И румянцем своим свежим
+                  br
+                  | Сам похож на колобка.
+                p.primary И когда глоточек сока
+                  br
+                  | Мы попробуем, друзья
+                  br
+                  | Вспомним солнышко высОко
+                  br
+                  | Небо, лето, облака…
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.peach
+                  .pack.small-packs__big
+                    span 1л
+
+
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Яблочно-виноградный кубанский хоровод
+              .col.col--sm-8
+                p.primary В свежий сладкий хоровод
+                  br
+                  | Яблоко с собой ведет
+                  br
+                  | Южный сочный виноград.
+                  br
+                  | Каждый паре этой рад!
+                p.primary Сладость солнечных высот
+                  br
+                  | И небес прозрачный свод
+                  br
+                  | Все найдете вы в нектаре
+                  br
+                  | Солнечных Даров Кубани. 
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.grapes
+                  .pack.small-packs__big
+                    span 1л
+                  .pack.small-packs__small
+                    span 0.2л
+
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Нектар тыквенно-яблочный с мякотью
+              .col.col--sm-8
+                p.primary Тыква с яблоком вдвоем
+                  br
+                  | Спели  вместе вечерком
+                  br
+                  | О Кубани о реке,
+                  br
+                  | О родимой стороне.
+                p.primary Ночь пришла, затихло все
+                  br
+                  | Но грустить не суждено -
+                  br
+                  | Соком солнца и тепла
+                  br
+                  | Возвращаем радость дня!
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.pumpkin
+                  .pack.small-packs__big
+                    span 1л
+
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Красно солнышко кубанского томата
+              .col.col--sm-8
+                p.primary Он в овощной семье сеньор 
+                  br
+                  | Кубанский красный помидор,
+                  br
+                  | На стебле зреет ярким цветом.
+                  br
+                  | Наполнен он кубанским летом
+                p.primary И красным солнышком горит
+                  br
+                  | Он за столом всегда царит.
+                  br
+                  | Кислинкой сладкой нас пленяет
+                  br
+                  | И аппетит всем поправляет!
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.tomatos
+                  .pack.small-packs__big
+                    span 1л
+
+
+          .card.card--main
+            .row
+              .col.col--sm-12
+                h1.header--h1 Летнее путешествие в Тропики 
+              .col.col--sm-8
+                p.primary Пальмы полные бананов
+                  br
+                  | Мандаринов яркий ряд
+                  br
+                  | Много яблок, много лаймов
+                  br
+                  | Ананасовый отряд.
+                p.primary Маракуйя, манго, киви
+                  br
+                  | К нам с экватора спешили
+                  br
+                  | Добавляем колкий лёд
+                  br
+                  | В соке сочный хоровод.
+              .col.col--sm-4.col--sm-align-bottom
+                .small-packs.small-packs--special.mix
+                  .pack.small-packs__big
+                    span 1л
+                  .pack.small-packs__small
+                    span 0.2л
+
+
+    .action__left
+      i.fa.fa-angle-left
+    .action__right
+      i.fa.fa-angle-right
+
+  //- .grid.grid--container
+    .row
 
 
   .content
     .row.cards
-      .col.col--sm-4.col--sm-flex
+      
+      .col.col--sm-12
+        .taste-container
+          .taste-choice
+            .taste.taste--cherry
+              img(src="img/fruit/cherry.png", alt="")
+              span.taste__name Вишня
+            .taste.taste--orange
+              img(src="img/fruit/orange.png", alt="")
+              span.taste__name Апельсин
+            .taste.taste--apple
+              img(src="img/fruit/apple.png", alt="")
+              span.taste__name Яблоко
+            .taste.taste--carrot
+              img(src="img/fruit/carrot.png", alt="")
+              span.taste__name Морковь
+            .taste.taste--peach
+              img(src="img/fruit/peach.png", alt="")
+              span.taste__name Персик
+            .taste.taste--grapes
+              img(src="img/fruit/grapes.png", alt="")
+              span.taste__name Виноград
+            .taste.taste--pumpkin
+              img(src="img/fruit/pumpkin.png", alt="")
+              span.taste__name Тыква
+            .taste.taste--tomato
+              img(src="img/fruit/tomato.png", alt="")
+              span.taste__name Томат
+            .taste.taste--mix
+              img(src="img/fruit/mix.png", alt="")
+              span.taste__name Тропик
+
+      .col.col--lg-4.col--sm-6.col--sm-flex
         .card.card--images.wow(data-wow-delay="0.2s")
           .card__content
             h2.header Видео
             p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики в простых на первый взгляд вещах.
-          .card__img.card__img--bottom(style="background-image: url('../../img/about-1.jpg')")
-            a(href="")
-              //- iframe(style="background-image:url(img/about-1.jpg)" src="https://www.youtube.com/embed/GBsj1if1a0w" frameborder="0" allowfullscreen)
-      .col.col--sm-4.col--sm-flex
+          .card__img.card__img--bottom(style="background-image: url('img/about-1.jpg')")
+            a(href="#modal").video-link.open-modal
+      .col.col--lg-4.col--sm-6.col--sm-flex
         .card.card--images.wow(data-wow-delay="0.4s")
-          .card__img.card__img--top(style="background-image: url('../../img/news-1.jpg')")
+          .card__img.card__img--top(style="background-image: url('img/news-1.jpg')")
           .card__content
             h2.header Новость
             time.date 02 марта 2017
             p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.
-      .col.col--sm-4.col--sm-flex.flex-wrap
+      .col.col--lg-4.col--sm-flex.flex-wrap
         .card.wow(data-wow-delay="0.6s")
           h2.header О бренде
           p Чтобы подчеркнуть хороший вкус, порой достаточно небольших изменений. Познакомьтесь с обновленным дизайном упаковки Rich – воплощением эстетики.
           a(href="").btn Подробнее
-        .card.wow.recipe(data-wow-delay="0.4s" style="background-image: url('../../img/recipe.jpg')")
+        .card.wow.recipe(data-wow-delay="0.4s" style="background-image: url('img/recipe.jpg')")
           h2.header Рецепт
           a(href="").btn Все рецепты
     .row.cards
-      .col.col--sm-4.col--sm-flex
+      .col.col--lg-4.col--sm-6.col--sm-flex
         .card.wow.card--small(data-wow-delay="0.2s")
           h2.header Документация по качеству
           .document-slider
+            a(href="img/sertificat-2.jpg").document
+              img(src="img/sertificat-2.jpg", alt="")
             - for(var i=0; i < 5; i++)
-              a(href="").document
+              a(href="img/sertificat.jpg").document
                 img(src="img/sertificat.jpg", alt="")
-      .col.col--sm-3.col--sm-flex.text--sm-center
+      .col.col--lg-3.col--sm-6.col--sm-flex.text--sm-center
         .card.wow.card--small.card--contacts(data-wow-delay="0.4s")
           h2.header Наши контакты
           a(href="").btn Обратная связь
-      .col.col--sm-5.col--sm-flex
+      .col.col--lg-5.col--sm-flex
         .card.wow.card--small.index-contact(data-wow-delay="0.6s")
           .index-contact__row
             strong Горячая линия:
@@ -156,3 +390,6 @@ block content
               | Краснодарский край, г.Краснодар,
               br
               | ул.Рашпилевская, 179/1, оф. 810
+
+  #modal.modal.video
+    iframe(style="background-image:url(img/about-1.jpg)" src="https://www.youtube.com/embed/GBsj1if1a0w" frameborder="0" allowfullscreen)

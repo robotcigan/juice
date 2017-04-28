@@ -1,30 +1,46 @@
 .bg
-  background url('../../img/inner-bg.jpg')
+  background url('../../img/bg.jpg') center 12%
+  min-height 100vh
 
 
 .action
-  margin-bottom -38rem
+  margin-bottom -42rem
   margin-left 4rem
   margin-top 12rem
   height 100vh
   position relative
-
+  &__left,
+  &__right
+    display none
+    color #fff
+    font-size 8rem
+    position absolute
+    top 5%
+    z-index 100
+  &__left
+    left 0
+  &__right
+    right 0
 .juice-pack
   // animation fadeDown 1s ease
   animation fadeLeft 1s ease
-  bottom 47rem
+  bottom 49rem
   left 12rem
-  height 46rem
+  height 44rem
   position absolute
   width 18rem
   z-index 50
+  &.packs
+    bottom 49rem
+    height 43rem
+    left 5rem
   img
     max-height 100%
 
 .fruit
-  animation fadeLeft 1.4s ease
-  bottom 41.5rem
-  left 11rem
+  animation fadeLeft 1.2s ease
+  bottom 45rem
+  left 13rem
   position absolute
   width 32rem
   z-index 100
@@ -35,7 +51,7 @@
 .stump
   background url('../../img/stump.png') no-repeat
   background-size contain
-  bottom 25rem
+  bottom 29rem
   display block
   height 30rem
   position absolute
@@ -53,6 +69,7 @@
   padding-top 0
   position relative
   z-index 50
+  width 100%
 
 .taste-choice
   align-items flex-end
@@ -62,7 +79,7 @@
   height 14.8rem
   justify-content space-around
   margin-bottom 4rem
-  padding 0 4rem
+  padding 0 1rem
   padding-bottom 4.3rem
   padding-top 0
   width 100%
@@ -71,6 +88,7 @@
     cursor pointer
     position relative
     text-align center
+    user-select none
     width 100%
     &:after
       background url('../../img/fruit-shadow.png') no-repeat
@@ -85,29 +103,45 @@
       transition opacity .5s
       width 6rem
     &:hover
+      position relative
+      transform translateY(3.3rem)
+      .taste__name
+        display block
       &:after
         opacity .3
       img
-        transform translateY(-10px)
+        transform translateY(-6px)
     img
       max-width 100%
       transition transform .4s
     &__name
       display none
       position relative
+      background-color $apple
+      border-radius 30px
+      color #fff
+      font-size 1.1rem
+      font-weight 500
+      font-family $customFont
+      letter-spacing 1px
+      margin-bottom 4px
+      padding .6rem .2rem
+      text-transform uppercase
       z-index 5
     &.active
       position relative
-      transform translateY(3.5rem)
-      &:hover
-        img
-          transform none
+      transform translateY(3.3rem)
+      img
+        transform translateY(-6px)
+      // &:hover
+      //   img
+      //     transform none
       &:before
         content ''
         border-radius 50%
-        border 1px solid $green
+        border 1px solid $apple
         bottom 2rem
-        circle(10rem)
+        circle(11rem)
         display block
         left 1.2rem
         position absolute
@@ -115,22 +149,32 @@
       &:after
         display none
       .taste__name
-        background-color $green
-        border-radius 30px
-        color #fff
         display block
-        font-size 1.2rem
-        font-weight 500
-        font-family $customFont
-        letter-spacing 1px
-        margin-bottom 4px
-        padding .6rem
-        text-transform uppercase
+    tasteChoise('cherry', $cherry)
+    tasteChoise('orange', $orange)
+    tasteChoise('apple', $apple)
+    tasteChoise('carrot', $carrot)
+    tasteChoise('peach', $peach)
+    tasteChoise('grapes', $grapes)
+    tasteChoise('pumpkit', $pumpkit)
+    tasteChoise('tomato', $tomato)
+    tasteChoise('mix', $mix)
 
 .cards
   &:last-child
     .card
       margin-bottom 0
+
+
+.main-cards
+  margin-top -6rem
+  // position relative
+  // display flex
+  // align-items center
+  // display flex
+  // height 100vh
+  // position fixed
+  // top 0
 
 .card
   animation fadeUp 1s forwards
@@ -162,15 +206,26 @@
     img
       display none
   &--main
-    animation fadeUp 1s 1.5s forwards
+    animation fadeUp 1s .5s forwards
+    display none
     background-color rgba(#fff, .9)
     opacity 0
-    margin-top -8rem
-    padding 3rem
+    // height 36.5rem
+    // margin-top -50%
+    padding 3rem 2rem
+    // position relative
+    // top 18rem
+    // margin-top -8rem
+    margin-bottom 4rem
+    &.active
+      display block
     .header--h1
       margin-bottom 2rem
+      font-size 3.4rem
     p:last-child
       margin-bottom 0
+    .small-packs--special
+      margin-left 0
   &--images
     padding 0
   &--small
@@ -186,6 +241,14 @@
   p
     margin 0
     margin-bottom 3rem
+  &--without-icons
+    // height 26rem
+    // top 21rem
+    // max-width 88%
+    max-width 88%
+
+
+
 
 .recipe
   background-size cover !important
@@ -199,6 +262,7 @@
 .about-text
   color $primary
   font-size 1.8rem
+  margin 0
 
 .index-contact
   background #fff url('../../img/contacts-img.jpg') no-repeat
@@ -228,20 +292,6 @@
     &:before
       content '\f104'
 
-
-.small-packs
-  .pack
-    display inline-block
-    margin-right 1rem
-    text-align center
-  img
-    display block
-    margin-bottom .3rem
-  span
-    color $primary
-    font-family $customFont
-    font-size 1.6rem
-
 .exposition
   &__slide
     opacity 0
@@ -250,3 +300,8 @@
     &.active
       display block
       opacity 1
+
+.open-modal
+  display block
+  height 100%
+  width 100%
