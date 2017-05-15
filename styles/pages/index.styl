@@ -1,11 +1,13 @@
 .bg
-  background url('../../img/bg.jpg') center 12%
+  background url('../../img/new_bg.jpg') center 12%
   min-height 100vh
+  &--offset
+    background-position center 0%
 
 
 .action
   margin-bottom -42rem
-  margin-left 4rem
+  // margin-left 4rem
   margin-top 12rem
   height 100vh
   position relative
@@ -21,6 +23,7 @@
     left 0
   &__right
     right 0
+
 .juice-pack
   // animation fadeDown 1s ease
   animation fadeLeft 1s ease
@@ -32,15 +35,15 @@
   z-index 50
   &.packs
     bottom 49rem
-    height 43rem
+    height 40rem
     left 5rem
   img
     max-height 100%
 
 .fruit
   animation fadeLeft 1.2s ease
-  bottom 45rem
-  left 13rem
+  bottom 46rem
+  left 12rem
   position absolute
   width 32rem
   z-index 100
@@ -55,7 +58,8 @@
   display block
   height 30rem
   position absolute
-  width 60rem
+  // width 60rem
+  width 47rem
   z-index 1
 .date
   color $gray
@@ -76,11 +80,11 @@
   background-color #fff
   border-radius $radius
   display flex
-  height 14.8rem
+  height 13rem
   justify-content space-around
   margin-bottom 4rem
   padding 0 1rem
-  padding-bottom 4.3rem
+  padding-bottom 3.8rem
   padding-top 0
   width 100%
   .taste
@@ -89,6 +93,7 @@
     position relative
     text-align center
     user-select none
+    transform translateY(1rem)
     width 100%
     &:after
       background url('../../img/fruit-shadow.png') no-repeat
@@ -104,16 +109,17 @@
       width 6rem
     &:hover
       position relative
-      transform translateY(3.3rem)
+      transform translateY(4rem)
       .taste__name
         display block
       &:after
         opacity .3
       img
-        transform translateY(-6px)
+        transform translateY(-3px) scale(.9)
     img
       max-width 100%
       transition transform .4s
+      transform scale(.9)
     &__name
       display none
       position relative
@@ -124,26 +130,26 @@
       font-weight 500
       font-family $customFont
       letter-spacing 1px
-      margin-bottom 4px
-      padding .6rem .2rem
+      margin-bottom 10px
+      padding .5rem .2rem
       text-transform uppercase
       z-index 5
     &.active
       position relative
-      transform translateY(3.3rem)
-      img
-        transform translateY(-6px)
-      // &:hover
-      //   img
-      //     transform none
+      transform translateY(4rem)
+      // img
+        // transform translateY(0) scale(.9)
+      &:hover
+        img
+          transform translateY(0) scale(.9)
       &:before
         content ''
         border-radius 50%
         border 1px solid $apple
         bottom 2rem
-        circle(11rem)
+        circle(10rem)
         display block
-        left 1.2rem
+        left 1.5rem
         position absolute
         z-index 0
       &:after
@@ -167,7 +173,7 @@
 
 
 .main-cards
-  margin-top -6rem
+  // margin-top -6rem
   // position relative
   // display flex
   // align-items center
@@ -210,13 +216,14 @@
     display none
     background-color rgba(#fff, .9)
     opacity 0
+    margin-left 4rem
     // height 36.5rem
     // margin-top -50%
     padding 3rem 2rem
     // position relative
     // top 18rem
-    // margin-top -8rem
-    margin-bottom 4rem
+    margin-top -7rem
+    margin-bottosm 4rem
     &.active
       display block
     .header--h1
@@ -245,7 +252,7 @@
     // height 26rem
     // top 21rem
     // max-width 88%
-    max-width 88%
+    max-width 82%
 
 
 

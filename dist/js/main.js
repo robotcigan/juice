@@ -6,6 +6,12 @@ $(document).ready(function () {
     console.log('not')
   }
 
+  var page = window.location.pathname;
+
+  if(page !== '/juice/_index.html') {
+    $('.bg').addClass('bg--offset');
+  }
+
 
   $('.document-slider').slick({
     slidesToScroll: 1,
@@ -162,5 +168,17 @@ $(document).ready(function () {
   $('.menu-open__open').on('click', function() {
     $('.mobile-menu').addClass('mobile-menu--active');
   })
+
+  // $('.small-packs .pack').each(function() {
+  //   var pack = $(this);
+  //   var hoverUrl = $(this).data('hover');
+  //   $(this).mouseenter(function() {
+  //     // console.log('background:', 'url("' + hoverUrl + '");')
+
+  //     $(this).css({
+  //       'background-image': 'url("' + hoverUrl + '")'
+  //     });
+  //   });
+  // })
 
 })
